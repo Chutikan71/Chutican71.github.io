@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.payment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1f242d;
+    padding: 1.5vw;
+}
+
+.payment form {
+    width: 40vw; /* ปรับให้เล็กลง */
+    padding: 2vw;
+    background: #fff;
+    border-radius: 1vw;
+}
+
+form .row {
+    display: flex;
+    gap: 1vw;
+    flex-wrap: wrap;
+}
+
+.row .column {
+    flex: 1 1 18vw;
+}
+
+.column .title {
+    font-size: 1.2vw;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 0.5vw;
+}
+
+.column .input-box {
+    margin: 1vw 0;
+}
+
+.input-box span {
+    display: block;
+    margin-bottom: 0.8vw;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 0.8vw;
+    border: 1px solid #ccc;
+    border-radius: 0.4vw;
+    font-size: 0.9vw;
+}
+
+.column .flex {
+    display: flex;
+    gap: 1vw;
+}
+
+.flex .input-box {
+    margin-top: 0.5vw;
+}
+
+.input-box img {
+    height: 5vw;
+    margin-top: 0.5vw;
+    filter: drop-shadow(0 0 0.1vw #000);
+}
+
+form .btns {
+    width: 100%;
+    padding: 0.8vw;
+    background: #8175d3;
+    border: none;
+    outline: none;
+    border-radius: 0.4vw;
+    font-size: 1vw;
+    color: #fff;
+    margin-top: 0.5vw;
+    cursor: pointer;
+    transition: .5s;
+}
+
+form .btns:hover {
+    background: #6a5acd;
+}

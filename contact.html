@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    </meta>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <title>CONTACT</title>
+    <link rel="stylesheet" href="contact.css">
+    
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="contactInfo">
+                <div>
+                    <h2>SHOP CONTACT</h2>
+                    <ul class="info">
+                        <li>
+                            <span><img src="./img/imcon/location (1).png" alt=""></span>
+                            <span>
+                                6, Rajamankha Nai Rd, Phra Prathom Chedi Sub-district,
+                                Amphoe Mueang Nakhon Pathom, Chang Wat Nakhon Pathom 73000
+                            </span>
+                        </li>
+                        <li>
+                            <span><img src="./img/imcon/mail.png" alt=""></span>
+                            <span>
+                                enankoshop@gmail.com
+                            </span>
+                        </li>
+                        <li>
+                            <span><img src="./img/imcon/call.png" alt=""></span>
+                            <span>
+                                062-345-6789
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="sci">
+                    <li><a href="#"><img src="./img/imcon/1.png" </a></li>
+                    <li><a href="#"><img src="./img/imcon/2.png" </a></li>
+                    <li><a href="#"><img src="./img/imcon/3.png" </a></li>
+                    <li><a href="#"><img src="./img/imcon/4.png" </a></li>
+                    <li><a href="#"><img src="./img/imcon/5.png" </a></li>
+                </ul>
+            </div>
+
+            <div class="contactForm">
+                <h2>Send a Message</h2>
+                <div class="formBox">
+                    <div class="inputBox w50">
+                        <input type="text" required>
+                        <span>First Name</span>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="text" required>
+                        <span>Last Name</span>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="text" required>
+                        <span>Email Address</span>
+                    </div>
+
+                    <div class="inputBox w50">
+                        <input type="text" required>
+                        <span>Phone Number</span>
+                    </div>
+                    <div class="inputBox w100">
+                        <textarea required></textarea>
+                        <span>Write your Message hear...........</span>
+                    </div>
+                    <div class="inputBox w100">
+                        <input type="submit" onclick="showSuccessMessage()" value="Send">
+                    </div>
+                </div>
+            </div>
+            <div class="backButton">
+                <a href="index.php" class="btn">Back to Homepage</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function showSuccessMessage() {
+            Swal.fire({
+                title: "Sent your message successfully",
+                showClass: {
+                    popup: `
+      animate__animated
+      animate__fadeInUp
+      animate__faster
+    `
+                },
+                hideClass: {
+                    popup: `
+      animate__animated
+      animate__fadeOutDown
+      animate__faster
+    `
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
